@@ -572,6 +572,15 @@ public class UpdateCenter extends AbstractModelObject implements Saveable, OnMas
         return new ArrayList<Plugin>(pluginMap.values());
     }
 
+    public static void tryAddPluginToMap(pluginMap, plugin) {
+        final Plugin existing = pluginMap.get(plugin.name);
+        // allow secondary update centers to publish different versions
+        final String altKey = plugin.name + ":" + plugin.version;
+        if (!pluginMap.containsKey(altKey)) {
+            pluginMap.put(altKey, plugin);
+        }
+    }
+
     /**
      * Returns a list of plugins that should be shown in the "available" tab, grouped by category.
      * A plugin with multiple categories will appear multiple times in the list.
