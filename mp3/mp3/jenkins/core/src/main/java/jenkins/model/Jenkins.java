@@ -669,6 +669,10 @@ public class Jenkins extends AbstractCIBase implements DirectlyModifiableTopLeve
         }
     };
 
+    public void updateAndTrim() {
+        updateComputerList();
+        trimLabels();
+    }
 
     /**
      * Hook for a test harness to intercept Jenkins.getInstance()
