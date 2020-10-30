@@ -337,6 +337,7 @@ hudson/model/WorkspaceCleanupThreadTest.class
 hudson/model/labels/LabelExpressionTest$2.class
 jenkins/model/ExtensionTypeHierarchyTest.class
 hudson/model/QueueTest$7.class
+jenkins/model/IdFilenameTest.class
 hudson/init/impl/GroovyInitScriptTest.class
 jenkins/model/TransientActionFactoryTest$1.class
 hudson/ProcStarterTest$EchoWrapper$DescriptorImpl.class

@@ -1,0 +1,2 @@
+1) Duplicate code, use extract method refactoring to resolve.
+3) Feature Encvy, use move method refactoring to resolve.
