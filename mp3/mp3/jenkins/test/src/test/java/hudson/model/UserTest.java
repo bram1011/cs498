@@ -378,6 +378,7 @@ public class UserTest {
          assertFalse("User should not be loaded.", contained);
     }
 
+    
     @Test
     public void testDoConfigSubmit() throws Exception {
         GlobalMatrixAuthorizationStrategy auth = new GlobalMatrixAuthorizationStrategy();   
